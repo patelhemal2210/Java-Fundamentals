@@ -75,6 +75,18 @@ import java.io.*;
  *
  * Custom Exception
  * -    When checked custom exception is thrown, the method must document that to let caller method know
+ *
+ * Centralized Exception Handling
+ * -    Exception handling is grouped together in one place or few places at high up in the application
+ * -    Benefit: Simplify exception handling since all exception handling is in one place or small number of spaces
+ * -    Drawback: It makes exception recovery more difficult - since its not possible to go back to the code where exception occurred
+ *
+ * Localized Exception Handling
+ * -    Placing exception handling closer to the point where the issue occurs
+ * -    Benefit: It makes it easy to recover from an exception
+ * -    Drawback: it makes exception handling cumbersome since error handling is spread throughout code
+ *
+ * Handle recoverable exception locally and handle broader and unrecoverable exception centrally
  */
 public class Exceptions {
 
